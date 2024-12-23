@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "Biblia Versiculos API",
+    "description": "API para buscar versículos bíblicos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Buscar Versículo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/versiculo/{{livro}}/{{capitulo}}/{{versiculo}}",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["versiculo", "{{livro}}", "{{capitulo}}", "{{versiculo}}"],
+          "variable": [
+            { "key": "livro", "value": "joao" },
+            { "key": "capitulo", "value": "3" },
+            { "key": "versiculo", "value": "16" }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    { "key": "livro", "value": "joao" },
+    { "key": "capitulo", "value": "3" },
+    { "key": "versiculo", "value": "16" }
+  ]
+}
